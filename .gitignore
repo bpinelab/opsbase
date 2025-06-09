@@ -1,0 +1,29 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+terraform.tfvars
+.terraform.lock.hcl
+crash.log
+
+# Sensitive files
+*.pem
+*.key
+*.env
+
+# Docker
+*.log
+docker/*.pyc
+docker/__pycache__/
+
+# VS Code and IDE
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Python cache (if used)
+__pycache__/
+*.py[cod]
