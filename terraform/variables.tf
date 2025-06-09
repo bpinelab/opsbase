@@ -1,36 +1,16 @@
 variable "project_id" {
-  description = "The ID of the GCP project."
+  description = "The GCP project ID where resources will be deployed"
   type        = string
 }
 
 variable "region" {
-  description = "The GCP region to deploy resources in."
+  description = "The GCP region to deploy resources (e.g., asia-northeast1)"
   type        = string
   default     = "asia-northeast1"
 }
 
-variable "awx_image" {
-  description = "Full container image path for AWX."
-  type        = string
-}
-
-variable "database_url" {
-  description = "Database URL for AWX environment."
-  type        = string
-}
-
-variable "db_user" {
-  description = "Username for PostgreSQL database."
-  type        = string
-}
-
 variable "db_password" {
-  description = "Password for PostgreSQL user."
+  description = "The password for the Cloud SQL PostgreSQL user"
   type        = string
   sensitive   = true
-}
-
-variable "db_name" {
-  description = "Name of the AWX PostgreSQL database."
-  type        = string
 }

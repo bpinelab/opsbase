@@ -15,12 +15,12 @@
 
 ```text
 opsbase/
-├── terraform/                      # Terraform IaC modules
-│   ├── main.tf                    # Defines GCP resources
+├── terraform/                    # Terraform IaC modules
+│   ├── main.tf                   # Defines GCP resources
 │   ├── variables.tf              # Input variable definitions
 │   ├── outputs.tf                # Terraform output values
 │   └── terraform.tfvars          # Example variable values
-├── docker/                        # Docker build for AWX
+├── docker/                       # Docker build for AWX
 │   ├── Dockerfile                # Custom AWX container
 │   └── install_awx.sh            # Initialization script
 └── .github/

@@ -1,0 +1,13 @@
+[all:vars]
+postgres_data_dir="/tmp/pgdocker"
+awx_official=true
+admin_user=admin
+admin_password=password
+secret_key=37dea7b94e7d4e1cfcabaa9dd7e5664e3901a50a0a87928bc02c957473a8e847
+pg_username=awxuser
+pg_password=changeme
+pg_database=awxdb
+pg_host=localhost
+
+[all]
+localhost ansible_connection=local
